@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Header() {
 
-    const pickRandom = (choices) => choices[Math.floor(Math.random() * choices.length)];
+    const pickRandom = (choices: Array<number>) => choices[Math.floor(Math.random() * choices.length)];
 
     const adjectives = [
         "Crystalline"
