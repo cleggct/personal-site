@@ -31,13 +31,13 @@ export default function Header() {
         ,"Constellation"
         ];
 
-    const getRandomName = () => pickRandom(adjectives) + ' ' + pickRandom(nouns);
 
     const [name, setName] = useState("Christa Clegg");
 
     useEffect(() => {
         
-         const pickRandom = (choices: Array<number>) => choices[Math.floor(Math.random() * choices.length)];
+        const pickRandom = (choices: Array<number>) => choices[Math.floor(Math.random() * choices.length)];
+        const getRandomName = () => pickRandom(adjectives) + ' ' + pickRandom(nouns);
         const interval = setInterval(() => {
             setName(getRandomName());
         }, 1500);
