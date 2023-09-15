@@ -36,7 +36,7 @@ export default function Header() {
         ];
 
 
-        const pickRandom = (choices: Array<number>) => choices[Math.floor(Math.random() * choices.length)];
+        const pickRandom = (choices: Array<string>) => choices[Math.floor(Math.random() * choices.length)];
         const getRandomName = () => pickRandom(adjectives) + ' ' + pickRandom(nouns);
         const interval = setInterval(() => {
             setName(getRandomName());
