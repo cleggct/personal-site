@@ -5,7 +5,11 @@ import React, { useState, useEffect } from 'react';
 export default function Header() {
 
 
-    const adjectives = [
+
+    const [name, setName] = useState("Christa Clegg");
+
+    useEffect(() => {
+        const adjectives = [
         "Crystalline"
         ,"Cerulean"
         ,"Colossal"
@@ -17,7 +21,7 @@ export default function Header() {
         ,"Chromatic"
         ];
 
-    const nouns = [
+        const nouns = [
         "Chrysanthemum"
         ,"Colossus"
         ,"Crinoid"
@@ -32,10 +36,6 @@ export default function Header() {
         ];
 
 
-    const [name, setName] = useState("Christa Clegg");
-
-    useEffect(() => {
-        
         const pickRandom = (choices: Array<number>) => choices[Math.floor(Math.random() * choices.length)];
         const getRandomName = () => pickRandom(adjectives) + ' ' + pickRandom(nouns);
         const interval = setInterval(() => {
