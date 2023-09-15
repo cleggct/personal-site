@@ -45,7 +45,7 @@ export default function Header() {
         return () => clearInterval(interval);
     }, [name]);
 
-    return (<h1 className="flex-1 text-5xl italic font-black font-sans">
+    return (<h1 className={"flex-1 text-5xl italic font-black font-sans"}>
 
                {`CC Stands For ${name}`}
             </h1>);

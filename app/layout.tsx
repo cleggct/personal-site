@@ -1,4 +1,4 @@
-import './globals.css'
+import './styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -22,6 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+
+      <head>
+        <link rel='icon' href='/favicon.ico'/>
+      </head>
+
       <body>{children}</body>
     </html>
   )
