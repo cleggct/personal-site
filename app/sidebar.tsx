@@ -15,10 +15,10 @@ export default function Sidebar() {
                 <p className={"text-center text-m mb-4"}>
                     Hi, I&apos;m Christa. Welcome to my website!
                 </p>
-                <a className={"text-center hover:text-slate-100"}>My GitHub</a>
-                <a className={"text-center hover:text-slate-100"}>My LinkedIn</a>
+                <a className={"text-center hover:text-slate-100"} href="https://www.github.com/cleggct">My GitHub</a>
+                <a className={"text-center hover:text-slate-100"} href="https://www.linkedin.com/in/chris-clegg-6b4a41235/">My LinkedIn</a>
                 <p className={"text-center mt-4"}>
-                    You can get in touch with me at <br /> (at) gmail (dot) com
+                    You can get in touch with me at <br /> cleggct (at) gmail (dot) com
                 </p>
             </div>
             );
